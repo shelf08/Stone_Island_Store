@@ -1,0 +1,289 @@
+body {
+    height: 190vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(150deg,#fff 45%, #71ceeb 55%);
+    background-repeat: no-repeat;
+    font-family: 'Oswald', sans-serif;
+    }
+    .header {
+        width: 100%;
+        top: 3%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logotype {
+        width: 5%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        max-width: 150px;
+        margin-left: 30%;
+    }
+    .nav-bt{
+        padding-left: 30px;
+    }
+    .nav-menu {
+        width: 50%;
+        padding-left: 5px;
+    }
+    
+    .menu {
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+    }
+    
+    .nav-item {
+        padding: 0 30px;
+    }
+    
+    .nav-link {
+        text-decoration: none;
+        color: #1eabd6;
+        font-size: 32px;
+        transition: 0.3s;
+        font-weight: bold;
+    }
+    
+    .nav-link:hover {
+        color: #71ceeb;
+    }
+    
+    .catalog{
+    flex-flow:column;
+    padding-top: 7%;
+    padding-left:3%;
+    padding-right:0%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    }
+    .catalog-line{
+        display: flex;
+        padding: 40px;
+    }
+    .product-image{
+    width:75% ;
+    height: 75%;
+    border: 2px solid #000;
+    padding: 25px;
+    }
+    .product-sub{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    }
+    .product-sub-low{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;   
+    }
+    .product-cost{
+    color: dimgray;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    }
+    .acc-popup{
+        display:none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top:15%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+    .acc-close{
+        color: #000;
+        font-size:32px;
+        font-weight: bold;
+        margin-left: auto;
+    }
+    .acc-close:hover, .acc-close:focus{
+        color:#000;
+        text-decoration: none;
+        cursor:pointer;
+    }
+    .acc-popup-header{
+        border-radius: 10px 10px 0 0;
+        background-color: #1eabd6;
+        color: white;
+        display: flex;
+        padding: 2px 16px;
+    }
+    
+    .acc-enter {
+        position: relative;
+        left: 80px;
+        bottom: 45px;
+        background-color: #fff;
+        border: 2px solid #1eabd6;
+        border-radius: 30px;
+        width: 50%;
+        z-index: 1;
+    }
+    
+    .acc-enter-form {
+        padding-left: 5%;
+        width: 90%;
+        height: 25px;
+        z-index: 10;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        color: #6f6f6f;
+    }
+    
+    .acc-enter-btn {
+        color: #1eabd6;
+        font-size: 17px;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .acc-popup-body{
+        color: #000;
+        font-size: 18px;
+        padding: 2px 16px;
+    }
+    
+    .acc-popup-footer{
+        border-radius: 0 0 10px 10px;
+        padding: 2px 16px;
+        background-color: #1eabd6;
+        color: #fff;
+    }
+    
+    .acc-popup-content{
+        border-radius: 11px;
+        position: relative;
+        background-color: #fff;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #000;
+        width: 20%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.8s;
+    }
+    @keyframes animatetop {
+        form{
+            top: -300px;
+            opacity: 0;
+        }
+        to{
+            top:0;
+            opacity: 1;
+        }
+    }
+    /*=========================*/
+    
+    .reg-popup{
+        display:none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top:15%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+    .reg-close{
+        color: #000;
+        font-size:32px;
+        font-weight: bold;
+        margin-left: auto;
+    }
+    .reg-close:hover, .reg-close:focus{
+        color:#000;
+        text-decoration: none;
+        cursor:pointer;
+    }
+    .reg-popup-header{
+        border-radius: 10px 10px 0 0;
+        background-color: #1eabd6;
+        color: white;
+        display: flex;
+        padding: 2px 16px;
+    }
+    
+    .reg-enter {
+        position: relative;
+        left: 80px;
+        bottom: 45px;
+        background-color: #fff;
+        border: 2px solid #1eabd6;
+        border-radius: 30px;
+        width: 50%;
+        z-index: 1;
+    }
+    
+    .reg-enter-form {
+        padding-left: 5%;
+        width: 90%;
+        height: 25px;
+        z-index: 10;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        color: #6f6f6f;
+    }
+    
+    .reg-enter-btn {
+        color: #1eabd6;
+        font-size: 17px;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .reg-popup-body{
+        color: #000;
+        font-size: 18px;
+        padding: 2px 16px;
+    }
+    
+    .reg-popup-footer{
+        border-radius: 0 0 10px 10px;
+        padding: 2px 16px;
+        background-color: #1eabd6;
+        color: #fff;
+    }
+    
+    .reg-popup-content{
+        border-radius: 11px;
+        position: relative;
+        background-color: #fff;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #000;
+        width: 20%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        animation-name: animatetop;
+        animation-duration: 0.8s;
+    }
+    @keyframes animatetop {
+        form{
+            top: -300px;
+            opacity: 0;
+        }
+        to{
+            top:0;
+            opacity: 1;
+        }
+    }
